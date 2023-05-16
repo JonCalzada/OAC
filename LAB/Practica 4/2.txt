@@ -1,0 +1,28 @@
+Tibrary Teee;
+use jeee.std' logic 1164.all;
+use ¡eee numeric std.ali;
+
+entity register _nbits is
+Egeneric(
+[gata-videh: integer:
+
+Eport(
+clk:in std logic;
+data_in: in std togic_vector(data_width-1 downto 0);
+data-out: out <Ed.Iogic vector (data width domto 1)
+end enti
+
+architecture behavioral of register _nbits is
+Esignal data: std_logic_vector(data width-1 domnto 0);
+begin
+fiproces= ct
+egin
+AIF eing_edgecelk) then
+data <- data_in;
+end if;
+end process;
+Fprogess (data)
+egin
+data outc-data;
+end' process;
+end behavioral;

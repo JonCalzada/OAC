@@ -1,0 +1,35 @@
+Sentity async_rom is
+
+E gehericC
+data width: integer
+adár_length: integer”:
+
+]
+
+3 in std -Jogic vector Caddr_Jength-1 domito 0);
+2 in Stá-logjez
+Tout std lobic vector(data wideh-1 domto 0)
+
+eñd entity async_rom;
+
+B- architecture behavoria) of async-ron is
+type memory is array(2**addr_length-1 domnto 0) of std logic vector (data width-1 domto 0);
+signal rondata: memory;
+
+attribute raminit_file: trino;
+attribute raminit_File of rom data: signal is "memoria2.mi
+Signal datum: std Togic vector (data_width-1 dowto 0);
+
+E begin
+] rocess Caddr)
+egin
+
+r¿datumes rom_dataCto_integer CunsonedCadar)));
+end process;
+
+process (datum, cs)
+
+data <= (others => '7');
+end-if
+end process;
+-end' architecture;

@@ -1,0 +1,73 @@
+el pabar ae asyne_romad a
+CCT
+
+1 [brary Teee;
+
+2 use jese.std logic 1164.all;
+
+3 use ieee-numeric_std.ali;
+
+4
+
+5 entity async_ron is
+
+6 E genericC
+
+7 data_width
+
+8 addr_lengt!
+
+90 portT
+
+10 addr; in std_Jogic vector Caddr_length-1 domto 0);
+
+u es: in std logic;
+
+Era data: out std logic vector (data_width-1 domto 0)
+
+13 ;
+
+14 end entity async_rom;
+
+15
+
+160 architecture behavoria] of asyc-ron, ie
+
+17 type memory is array(2*raddr_ength-1 domnto 0) of std logic vector (data width-1 domnto 0)
+E signal rom_data: memory;
+
+20 attribute raminit_file: strino;
+
+2 attribute raminit File'of rom data: signal is "memoria2.mif";
+22 signal datum: std Togic vector (data width-1 domto 0);
+230 begin
+
+245 roces Caddr)
+
+25 .
+
+26 iteger (unsignedCaddr)));
+
+27
+
+28
+
+295 process (datum, cs)
+
+307 begín
+
+ao if cs="1" then
+
+32 + data <= datum;
+
+E] else
+
+En data <= (others => '7');
+
+35 end if;
+
+36 end process;
+
+37 Lend architecture;
+
+38
